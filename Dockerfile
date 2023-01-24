@@ -33,11 +33,10 @@ RUN apt-get update && \
     gcc-multilib g++-multilib ruby-full binutils-mips-linux-gnu sudo
 
 # Personal dotfiles
-# RUN cd /root && \
-#     rm .bashrc && \
-#     git clone --recursive --depth 1 https://github.com/ctfhacker/dotfiles.git && \
-#     cd dotfiles && \
-#     ./install.sh
+RUN cd /root && \
+    rm .bashrc && \
+    git clone --recursive --depth 1 https://github.com/KaiNakamura/dotfiles.git && \
+    cd dotfiles
 
 # Upgrade pip and ipython
 # RUN python2 -m pip install --upgrade pip && \

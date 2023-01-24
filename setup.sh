@@ -18,7 +18,6 @@ sudo apt-get -y install ipython
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install virtualenv
 
-
 cd $HOMEDIR
 mkdir tools
 cd tools
@@ -49,9 +48,7 @@ cd pwndbg
 sudo sudo apt-get -y install stow
 cd $HOMEDIR
 rm .bashrc
-git clone --recursive https://github.com/ctfhacker/dotfiles
-cd dotfiles
-./install.sh
+git clone --recursive https://github.com/KaiNakamura/dotfiles.git
 source ~/.bash_profile
 
 sudo apt-get install -y qemu-user-static qemu binfmt*
