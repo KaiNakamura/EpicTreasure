@@ -31,19 +31,19 @@ cd pwndbg
 ./setup.sh
 
 # Install radare2
-cd $HOMEDIR/tools
-git clone https://github.com/radare/radare2
-cd radare2
-./sys/install.sh
+# cd $HOMEDIR/tools
+# git clone https://github.com/radare/radare2
+# cd radare2
+# ./sys/install.sh
 
 # Install 32 bit libs
-sudo dpkg --add-architecture i386
-sudo apt-get update
-sudo apt-get -y install libc6:i386 libncurses5:i386 libstdc++6:i386
-sudo apt-get -y install libc6-dev-i386
+# sudo dpkg --add-architecture i386
+# sudo apt-get update
+# sudo apt-get -y install libc6:i386 libncurses5:i386 libstdc++6:i386
+# sudo apt-get -y install libc6-dev-i386
 
 # Install r2pipe
-sudo pip install r2pipe
+# sudo pip install r2pipe
 
 # Personal config
 sudo sudo apt-get -y install stow

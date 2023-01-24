@@ -1,0 +1,1 @@
+docker run --privileged -v ${PWD}:/root/host-share --rm -it --workdir=/root/host-share kainakamura/epictreasure
